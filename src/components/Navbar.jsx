@@ -23,10 +23,12 @@ const Navbar = () => {
     }
   }
 
+  console.log(user)
+
   return (
     <div className="navbar bg-base-300">
         <div className="flex-1">
-          <Link to="/" className="btn btn-ghost text-xl">Linkr</Link>
+          <Link to="/" className="btn btn-ghost text-xl"> 🧑🏻‍💻Linkr</Link>
         </div>
 
         {user &&
