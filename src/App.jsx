@@ -8,6 +8,7 @@ import Profile from "./pages/Profile";
 import Feed from "./pages/Feed";
 import Connections from "./pages/Connections";
 import Requests from "./pages/Requests";
+import Signup from "./pages/Signup";
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
             <Route path="/" element={<Body/>} >
               {/* Childrens of the Body Route */}
               <Route path="/" element={<Feed/>} />
+              <Route path="/signup" element={<Signup/>} />
               <Route path="/login" element={<Login/>} />
               <Route path="/profile" element={<Profile/>} />
               <Route path="/connections" element={<Connections/>} />

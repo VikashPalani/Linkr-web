@@ -44,7 +44,7 @@ const Body = () => {
       <Navbar />
       {/* Any children routes of the Body Route will be rendered using the Outlet component */}
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </div>
   )
 }

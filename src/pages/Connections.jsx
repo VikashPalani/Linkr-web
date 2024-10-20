@@ -35,20 +35,21 @@ const Connections = () => {
     )
 
     return (
-        <>
+        <div className="mb-5">
             <div className="flex justify-center">
             <h1 className="font-bold text-3xl my-8">Connections</h1>
             </div>
 
-            <div className="flex justify-center gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 justify-items-center">
                 {connections.map((connection) => (
                     <div key={connection._id}>
-                        <div className="card bg-base-300 w-96 shadow-xl h-[600px]">
+                        <div className="card bg-base-300 w-96 shadow-xl h-[650px]">
                             <figure>
                                 <img
                                     src={connection.photoUrl}
                                     alt="User Profile"
-                                    className="mx-6 h-[350px] w-[410px]"
+                                    className="mx-6 w-full object-cover"
+                                    style={{height: "350px"}}
                                     
                                 />
                             </figure>
@@ -63,8 +64,8 @@ const Connections = () => {
                     </div>
                 ))}
             </div>
-        </>
+        </div>
     )
 }
 
-export default Connections
+export default Connections;

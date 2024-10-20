@@ -2,13 +2,13 @@ import { useState } from 'react';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 import { addUser } from '../utils/userSlice';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../utils/constants';
 
 const Login = () => {
 
-  const [emailId, setEmailId] = useState('vikash@gmail.com');
-  const [password, setPassword] = useState('Vikash@123');
+  const [emailId, setEmailId] = useState('@gmail.com');
+  const [password, setPassword] = useState('@123');
   const [error,setError] = useState("");
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -16,7 +16,7 @@ const Login = () => {
   const handleLogin = async () => {
     try{
       const res = await axios.post(BASE_URL + "/login",
-        {emailId,password,},
+        {emailId,password},
         {withCredentials: true}
       );
         //User data will be stored in Redux store
@@ -69,6 +69,10 @@ const Login = () => {
             >
               Login
             </button>
+          </div>
+          <div className='flex justify-center'>
+            <p className='ml-4'>New to Linkr? </p>
+            <Link to="/signup" className='mr-4 underline cursor-pointer font-semibold'>Signup</Link>
           </div>
 
         </div>
