@@ -26,7 +26,7 @@ const EditProfile = ({user}) => {
             //API call to save the user profile
             //withCredentials: true allows us to make authenticated requests
             const res = await axios.patch(BASE_URL + "/profile/edit",{
-                firstName, lastName, age, about, photoUrl
+                firstName, lastName, age, about, photoUrl, gender
             },{withCredentials: true});
             dispatch(addUser(res?.data?.data));
             setToast(true);

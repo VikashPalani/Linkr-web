@@ -9,18 +9,18 @@ const UserCard = (user) => {
                 <img
                     src= {photoUrl}
                     alt="User Profile" 
-                    className=" mx-6 my-6"
+                    className=" mx-6 h-[300px] w-[410px]"
                 />
             </figure>
             <div className="card-body w-96 h-56">
                 <h2 className="card-title">{firstName+" "+lastName}</h2>
                 {age && 
                     <p>{age+", "+ gender}</p>
-        }
+                }
                 <p>{about}</p>
-                <div className="card-actions justify-center my-4 mt-4">
-                <button className="btn btn-primary">Ignore</button>
-                <button className="btn btn-secondary">Interested</button>
+                <div className="card-actions justify-center my-4 mt-2">
+                    <button className="btn btn-primary">Ignore</button>
+                    <button className="btn btn-secondary">Interested</button>
                 </div>
             </div>
         </div>
