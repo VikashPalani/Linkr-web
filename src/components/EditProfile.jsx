@@ -41,7 +41,7 @@ const EditProfile = ({user}) => {
     }
 
     return (
-    <div className="flex justify-center gap-6 my-4">
+    <div className="flex justify-center gap-6 my-2">
         <div className="card bg-base-300 w-96 shadow-xl">
             <div className="card-body">
             <h2 className="card-title justify-center text-2xl">Edit Profile</h2>
@@ -146,4 +146,4 @@ const EditProfile = ({user}) => {
     )
 }
 
-export default EditProfile
+export default EditProfile;
