@@ -1,4 +1,4 @@
-# DevTinder
+# Linkr - Sync your skills, Link your world
 
 - Create a Vite + React application
 - Remove unecessary code and create a Hello World app
